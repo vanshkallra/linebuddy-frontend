@@ -153,6 +153,27 @@ const Home = () => {
           </div>
         </div>
 
+        {/* Service Locations */}
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl shadow-2xl p-8 mb-12 border border-gray-700">
+          <div className="flex items-center gap-3 mb-8 justify-center">
+            <MapPin className="w-8 h-8 text-blue-400" />
+            <h3 className="text-2xl font-bold text-blue-400">Where Can You Use Line Buddy?</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {serviceLocations.map((location, index) => {
+              const IconComponent = location.icon;
+              return (
+                <div key={index} className="bg-gray-700/50 rounded-2xl p-4 border border-gray-600 hover:border-blue-500/50 transition-colors group">
+                  <div className="flex items-center gap-3">
+                    <IconComponent className="w-6 h-6 text-blue-400 group-hover:text-blue-300 transition-colors" />
+                    <span className="text-gray-300 group-hover:text-white transition-colors">{location.text}</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Pricing Section */}
         <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl shadow-2xl p-8 mb-12 border border-gray-700">
           <div className="flex items-center gap-3 mb-8 justify-center">
@@ -202,26 +223,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Service Locations */}
-        <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl shadow-2xl p-8 mb-12 border border-gray-700">
-          <div className="flex items-center gap-3 mb-8 justify-center">
-            <MapPin className="w-8 h-8 text-blue-400" />
-            <h3 className="text-2xl font-bold text-blue-400">Where Can You Use Line Buddy?</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {serviceLocations.map((location, index) => {
-              const IconComponent = location.icon;
-              return (
-                <div key={index} className="bg-gray-700/50 rounded-2xl p-4 border border-gray-600 hover:border-blue-500/50 transition-colors group">
-                  <div className="flex items-center gap-3">
-                    <IconComponent className="w-6 h-6 text-blue-400 group-hover:text-blue-300 transition-colors" />
-                    <span className="text-gray-300 group-hover:text-white transition-colors">{location.text}</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        
 
         {/* Offers */}
         <div className="bg-gray-800/50 backdrop-blur-sm rounded-3xl shadow-2xl p-8 mb-12 border border-gray-700">
