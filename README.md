@@ -75,7 +75,7 @@ Line Buddy is a revolutionary platform that connects people who need someone to 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/line-buddy.git
+git clone https://github.com/vanshkallra/line-buddy.git
 
 # Navigate to the project directory
 cd line-buddy
