@@ -1,6 +1,11 @@
 # Line Buddy - Making Every Second Count
+<div align="center">
+  <img src="public/eye-colour.svg" alt="Line Buddy" width="200">
+</div>
 
-![Line Buddy](public/eye-colour.svg)
+
+
+
 
 ## Overview
 
@@ -8,9 +13,11 @@ Line Buddy is a revolutionary platform that connects people who need someone to 
 
 "Life chhoti hai, line badi. Line chhodo life pakdo."
 
+<img width="1240" alt="Screenshot 2025-06-25 at 12 41 49 AM" src="https://github.com/user-attachments/assets/ecef755d-7bbc-4424-91ee-c34ec724e564" />
+
 ## Key Features
 
-### 📱 For Customers
+### For Customers
 
 - *Book a Line Buddy*: Skip the wait by hiring someone to stand in line for you
 - *Flexible Durations*: Book a buddy for as little as 15 minutes or up to 3+ hours
@@ -18,7 +25,7 @@ Line Buddy is a revolutionary platform that connects people who need someone to 
 - *Transparent Pricing*: Clear pricing structure with options for special requirements
 - *Referral Program*: Refer friends and get discounts on your bookings
 
-### 💼 For Line Buddies
+### For Line Buddies
 
 - *Flexible Earning*: Make money by helping others save their valuable time
 - *Choose Your Schedule*: Work when it's convenient for you
@@ -39,6 +46,23 @@ Line Buddy is a revolutionary platform that connects people who need someone to 
 - 🚗 Parking Slot Lines
 - ⛽ Gas Delivery / Utility services
 - And many more custom requests!
+
+## Tech Stack
+
+### Frontend
+- UI Library: React 18 with Hooks and Context API for state management
+- Routing: React Router v6
+- HTTP Client: Axios (with interceptors for auth tokens)
+
+### Backend
+- Runtime: Node.js
+- Framework: Express.js
+- Database: MongoDB 
+- Authentication: JSON Web Tokens (JWT) and bcrypt for password hashing
+
+### Deployment
+- Database: MongoDB Atlas (Cloud-hosted)
+- Hosting: Vercel or Heroku
 
 
 ## Getting Started
